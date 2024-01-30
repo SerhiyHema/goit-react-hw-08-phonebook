@@ -1,0 +1,15 @@
+.nav {}
+
+.box__list {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+.list_link {
+    position: relative;
+}
+
+.list_link>a {
+    color: #ffffff;
+}

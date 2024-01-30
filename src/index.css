@@ -1,0 +1,159 @@
+@import-normalize;
+/* bring in normalize.css styles */
+
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+div {
+  display: block;
+}
+
+body {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #2f3761;
+}
+
+a.active {
+  color: #2f3761;
+}
+
+a.active::before {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  border-bottom: solid 2px;
+  content: '';
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1158px;
+  padding: 0 20px;
+}
+
+.home-not-auth {
+  width: 100%;
+  height: 500px;
+  padding: 120px 0;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(./images/background_home_not_auth.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-not-auth__title {
+  color: inherit;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.home-not-auth__box-link {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: none;
+  border-bottom: solid 1px #2f3761;
+  background: transparent;
+  width: 100%;
+  padding-left: 6px;
+  transition: 0.5s;
+  position: relative;
+  box-sizing: border-box;
+}
+
+input:placeholder-shown {
+  transform: rotateX('angle');
+}
+
+.contact {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #1d0bd8 0%, #d5d512 100%);
+}
+
+.contact__form_box {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: double 5px #e70f0f;
+}
+
+.contact__form_box button {
+  border: none;
+  border-radius: 20px;
+  background-color: #e70f0f;
+  transition: transform 100ms ease-in-out;
+}
+
+.contact__form_box button:active {
+  transform: scale(0.8);
+}
+
+.contact__form_box button:hover {
+  transform: scale(1.1);
+}
